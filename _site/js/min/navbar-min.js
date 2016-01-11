@@ -1,0 +1,1 @@
+$(document).scroll(function(){$(this).scrollTop()>260?$(".navbar").addClass("grey_bg"):$(".navbar").removeClass("grey_bg")});

@@ -1,0 +1,59 @@
+2015.oct.14
+
+Az oldal a Jekyll blog használja, azért mert
+
+	Ingynesen lehet vele deployolni githubon.
+	
+	Nem szükséges adatbázis
+		Biztonságosabb
+		Gyorsabb
+	
+	Nincs karbantartási
+		Idő
+		Költség
+	
+	Markdown
+
+	Pluginek hozzáadhatók
+
+	Van benne blogmotor, bár ez az oldal jelenleg nem használja
+
+A telepítés és a feltöltés lépései itt elérhetők:
+http://jekyllrb.com
+
+	Nagyon szeretném hangsúlyozni hogy csak akkor fog működni az oldal, ha repo neve “userneve.githu.io”  lesz.
+	
+
+A Jekyll templatek rendszerével segíti a munkát. Van egy Deafult template, ennek a gyereki a Blog és a Page. A Page template alapján készült Page-eknek a dátum az azonosítójuk.
+A fő konfigurációs file az _cong.yml.
+
+A Jekyll -t úgy kell elindítani h belállunk parancssorral a mappájába és ki kell adni a jeykyll serve parancsot, lehet rá kapcsolót rakni jekyll serve -w és akkor az oldal a rendszer nagyobb válzotások után is képes újrahívni magát.
+
+
+A Jade templating language semmi másról em szól csak az indentation-okrol, segiti a jobb atlathatosagot a html elemek egymasbaagyazasa egy sorral es egy tabbal beljebb kell hogy kezdodjon.
+Itt egy remek átalakító segédletnek:
+http://html2jade.aaron-powell.com
+
+Az oldal minden tartalmi eleméhez külön sass file keszült, amit a main. sass-ba mergálódik.
+
+A sass és jade file-ok előállításához nagyon ajánlom a CodeKit nevü appot, 30napig ingyenes és local szerver is van benne, ami minden mentés után újrahívja az oldalt így a változások azonnal láthatók a böngészőben.
+Settings:
+Browser Refreshing settings:
+External Server
+External Server Required On
+External Server Address: http://localhost:4000 (_config.yml file ban konfigurálható ez a cím)
+
+Codekit tud még minifyolni és és megadható a fordítás helye.
+
+
+
+Az oldal képi tartalmai nem lettek méretszerint optimalizálva, mert le lesznek cserélve, akárcsak a szövegek.
+
+A galéria ezen az szolgáltatáson keresztűl működik, ami egy ifram-et állít elő:
+https://embedsocial.com/embed-gallery.php
+
+A levélküldés funkcióért pedig ez felelős: (Sándor mail címét majd be kell regisztrálni!)
+https://formspree.io
+
+
+A facebook vállalkozás oldala nem készült el.

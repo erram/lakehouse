@@ -1,0 +1,353 @@
+/* background setup */
+.background {
+  background-repeat: no-repeat;
+  /* custom background-position */
+  background-position: 50% 50%;
+  /* ie8- graceful degradation */
+  background-position: 50% 50% \9  !important; }
+
+/* fullscreen setup */
+/* give this to all tags from html to .fullscreen */
+html, body {
+  height: 100%; }
+
+.fullscreen, .content-a {
+  width: 100%;
+  min-height: 100%; }
+
+.not-fullscreen, .not-fullscreen .content-a, .fullscreen.not-overflow, .fullscreen.not-overflow .content-a {
+  height: 100%;
+  overflow: hidden; }
+
+/* content centering styles */
+.content-a {
+  display: table; }
+
+.content-b {
+  display: table-cell;
+  position: relative;
+  vertical-align: middle; }
+
+/* visual styles */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: grey; }
+
+section {
+  background: #9ed100; }
+
+.not-fullscreen {
+  height: 50%; }
+
+.navbar {
+  transition: all 1s;
+  -webkit-transition: all 1s; }
+
+.navbar-brand {
+  padding: 21px 1px 0 0; }
+
+.brand {
+  color: white; }
+
+.logo {
+  float: left;
+  width: 60px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.navbar-nav > li > a {
+  font-size: 14px;
+  color: white;
+  text-align: center; }
+
+.navbar-toggle .icon-bar {
+  background-color: white; }
+
+.collapse li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  color: black; }
+
+.grey_bg {
+  background-color: rgba(54, 54, 54, 0.6); }
+
+#top-menu {
+  margin-right: 5px; }
+  #top-menu a {
+    -webkit-transition: 0.7s all ease-out;
+    -moz-transition: 0.7s all ease-out;
+    transition: 0.7s all ease-out; }
+  #top-menu li a span img {
+    height: 18px;
+    color: #b52808; }
+
+#top-menu li {
+  margin-top: 3px; }
+  #top-menu li:hover {
+    fill: black; }
+  #top-menu li:hover .icon_fish {
+    fill: black; }
+#top-menu li.active a {
+  border-bottom: 3px solid #333;
+  color: #333; }
+#top-menu li.active a .icon_fish {
+  fill: black; }
+
+.flag {
+  width: 21px;
+  height: 21px; }
+
+@media(max-width: 1000px) {
+  .logo {
+    display: none; }
+
+  .brand {
+    display: none; } }
+@media(max-width: 767px) {
+  .logo {
+    display: block;
+    margin-top: -10px; }
+
+  .brand {
+    display: block;
+    margin-top: -10px; } }
+.front .content-a .content-b p {
+  text-align: center;
+  font-size: 1.5em;
+  color: white; }
+
+.line1 {
+  height: 30%; }
+
+.welcome_row1 {
+  margin-bottom: 50px; }
+
+#welcome_headline {
+  color: black;
+  font-style: italic;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px; }
+
+.left_column {
+  position: relative;
+  background-color: grey;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto; }
+
+.middle_column {
+  position: relative;
+  background-color: grey;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto; }
+
+.right_column {
+  position: relative;
+  background-color: grey;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto; }
+
+.welcome_row2 {
+  margin-bottom: 50px; }
+  .welcome_row2 .col-md-4 {
+    margin-bottom: 50px;
+    position: relative; }
+    .welcome_row2 .col-md-4 img {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      height: 100px;
+      width: 100px; }
+    .welcome_row2 .col-md-4 span {
+      display: block;
+      font-size: 1.4em;
+      text-align: center;
+      margin-top: 20px; }
+
+.welcome_row3 {
+  margin-top: -55px;
+  margin-bottom: 50px; }
+
+.welcome_row4 {
+  margin-bottom: 50px; }
+  .welcome_row4 a {
+    color: grey; }
+    .welcome_row4 a:hover {
+      color: black;
+      text-decoration: none; }
+    .welcome_row4 a:hover .icon_facebook {
+      color: black;
+      text-decoration: none;
+      fill: black; }
+
+.fishing_row1 {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.fishing_row3, .fishing_row5, .fishing_row7 {
+  margin-bottom: 80px; }
+  .fishing_row3 .col-md-3, .fishing_row5 .col-md-3, .fishing_row7 .col-md-3 {
+    text-align: center; }
+    .fishing_row3 .col-md-3 img, .fishing_row5 .col-md-3 img, .fishing_row7 .col-md-3 img {
+      margin-right: 0;
+      height: 200px;
+      width: 200px; }
+
+.fish_name {
+  text-align: center;
+  font-size: 30px; }
+
+#title_hunting {
+  color: grey-brown;
+  text-align: center;
+  font-size: 50px; }
+
+.hunting_row1 {
+  margin-top: 50px; }
+
+.hunting_row1, .hunting_row2 {
+  margin-bottom: 50px; }
+
+.hunting_row4, .hunting_row6, .hunting_row8 {
+  margin-bottom: 80px; }
+  .hunting_row4 .col-md-3, .hunting_row6 .col-md-3, .hunting_row8 .col-md-3 {
+    text-align: center; }
+    .hunting_row4 .col-md-3 img, .hunting_row6 .col-md-3 img, .hunting_row8 .col-md-3 img {
+      margin-right: 0;
+      height: 200px;
+      width: 200px; }
+
+.wild_name {
+  text-align: center;
+  font-size: 30px; }
+
+.house_row1 {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.house_row3, .house_row5, .house_row7 {
+  margin-bottom: 80px; }
+  .house_row3 .col-md-3, .house_row5 .col-md-3, .house_row7 .col-md-3 {
+    text-align: center; }
+    .house_row3 .col-md-3 img, .house_row5 .col-md-3 img, .house_row7 .col-md-3 img {
+      margin-right: 0;
+      height: 200px;
+      width: 200px; }
+
+.house_name {
+  text-align: center;
+  font-size: 30px; }
+
+.gallery_row1 {
+  margin-top: 50px; }
+
+#hide_embed {
+  margin-bottom: -60px; }
+
+#map_container {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+#map_canvas {
+  position: relative;
+  top: 11%;
+  width: 84%;
+  height: 78%;
+  margin: 0 auto; }
+
+.contact-info {
+  color: grey;
+  background: rgba(54, 54, 54, 0.1);
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  font-size: 1.5em; }
+  .contact-info p {
+    margin-top: 15px; }
+  .contact-info a {
+    color: grey; }
+    .contact-info a:hover {
+      color: black;
+      text-decoration: none; }
+    .contact-info a:hover .icon_facebook {
+      color: black;
+      text-decoration: none;
+      fill: black; }
+  .contact-info [class="glyphicon"] {
+    margin-top: 2px; }
+
+.contactus_row1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  clear: both; }
+
+.letter_body {
+  margin-top: 4px; }
+
+.letter_labels {
+  color: grey;
+  letter-spacing: 2px;
+  font-weight: bold; }
+
+input, textarea {
+  border: 3px solid grey;
+  width: 100%; }
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #A9A9A9; }
+
+input {
+  margin-top: 15px;
+  height: 30px; }
+
+textarea {
+  height: 10em;
+  rows: 18; }
+
+[type="submit"] {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-top: 30px;
+  border: none;
+  text-transform: uppercase; }
+  [type="submit"]:hover {
+    background: grey; }
+
+.foot_row1 {
+  color: white;
+  background-color: grey;
+  font-size: 1.3em;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  text-align: right; }
+  .foot_row1 a {
+    color: white;
+    font-style: normal;
+    font-weight: bold; }
+  .foot_row1 a:hover {
+    color: #5DFC0A;
+    text-decoration: none; }
+
+.foot_row1 p {
+  font-style: italic; }
+
+body {
+  color: grey !important;
+  position: relative; }
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 65px; }
