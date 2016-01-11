@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   var latlng = new google.maps.LatLng(46.567578, 20.367209); /* latitude and longitude for the center of the map*/
     
-  var image = '../../img/logo_sm_40.png';
+  var image = '../img/logo_sm_40.png';
 
   var myOptions = {
       zoom: 12, /* zoom level of the map */
